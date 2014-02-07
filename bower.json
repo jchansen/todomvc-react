@@ -1,0 +1,11 @@
+{
+  "name": "todomvc-backbone_marionette_require",
+  "version": "0.0.0",
+  "dependencies": {
+    "todomvc-common": "~0.1.9",
+    "requirejs": "~2.1.6",
+    "require-jsx": "*",
+    "react": "~0.8.0",
+    "jquery": "1.9.1"
+  }
+}
