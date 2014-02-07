@@ -1,10 +1,14 @@
 define(
 	[
-		'app'
+		'app',
+
+    // Routers
+    './router'
 	],
-	function (app) {
+	function (app, Router) {
 
 		var run = function () {
+      new Router();
 			app.start();
 		};
 
