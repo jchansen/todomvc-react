@@ -1,5 +1,4 @@
 (function () {
-  var root = this;
 
   require.config({
     baseUrl: '/app',
@@ -8,7 +7,19 @@
       jsx: "../bower_components/require-jsx/jsx",
       JSXTransformer: "../bower_components/react/JSXTransformer",
       'jquery': '../bower_components/jquery/jquery',
-      'react': '../bower_components/react/react'
+      'react': '../bower_components/react/react',
+      'underscore': '../bower_components/underscore/underscore',
+      'backbone': '../bower_components/backbone/backbone'
+    },
+    shim: {
+      'underscore': {
+        deps: [],
+        exports: '_'
+      },
+      'backbone': {
+        deps: ['underscore', 'jquery'],
+        exports: 'Backbone'
+      }
     }
   });
 

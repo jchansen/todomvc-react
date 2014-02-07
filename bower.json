@@ -6,6 +6,8 @@
     "requirejs": "~2.1.6",
     "require-jsx": "*",
     "react": "~0.8.0",
-    "jquery": "1.9.1"
+    "jquery": "1.9.1",
+    "underscore": "~1.4.4",
+    "backbone": "~1.1.0"
   }
 }
