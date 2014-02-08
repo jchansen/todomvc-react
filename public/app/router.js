@@ -3,7 +3,7 @@ define(
       'backbone',
       'react',
       'jquery',
-      './components/HomePage'
+      'jsx!./components/HomePage'
     ],
     function (Backbone, React, $, HomePage) {
 

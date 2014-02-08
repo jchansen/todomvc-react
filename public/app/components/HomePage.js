@@ -7,7 +7,7 @@ define(
 
     return React.createClass({
       render: function () {
-        return React.DOM.h1(null, "Hello world!");
+        return <h1>Hello World!</h1>;
       }
     });
 

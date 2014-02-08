@@ -3,8 +3,8 @@
   require.config({
     baseUrl: '/app',
     paths: {
-      //'q': '../javascripts/q',
-      jsx: "../bower_components/require-jsx/jsx",
+      text: "../javascripts/text",
+      jsx: "../javascripts/jsx-requirejs-plugin/jsx",
       JSXTransformer: "../bower_components/react/JSXTransformer",
       'jquery': '../bower_components/jquery/jquery',
       'react': '../bower_components/react/react',
