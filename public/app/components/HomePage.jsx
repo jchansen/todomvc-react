@@ -1,9 +1,13 @@
+/**
+ * @jsx React.DOM
+ */
+
 define(
   [
     "react",
-    "jsx!./Header",
-    "jsx!./Main",
-    "jsx!./Footer"
+    "./Header",
+    "./Main",
+    "./Footer"
   ],
   function (React, Header, Main, Footer) {
     "use strict"
