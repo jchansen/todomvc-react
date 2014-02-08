@@ -3,7 +3,7 @@ define(
 		'app',
 
     // Routers
-    './router'
+    './client_router'
 	],
 	function (app, Router) {
 
