@@ -1,4 +1,4 @@
 .idea
 node_modules
 public_compiled
-public/app/components/**.js
+public/app/components/**/*.js

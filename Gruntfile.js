@@ -37,11 +37,19 @@ module.exports = function (grunt) {
           ext: '.js'
         }
 
+    },
+
+    watch: {
+      react_jsx: {
+        files: ['public/app/components/**/*.jsx'],
+        tasks: ['react']
+      }
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-requirejs');
   grunt.loadNpmTasks('grunt-react');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('default', ['react']);
 };
