@@ -12,7 +12,10 @@ requirejs.config({
     'jquery': '../bower_components/jquery/jquery',
     'react': '../bower_components/react/react',
     'underscore': '../bower_components/underscore/underscore',
-    'backbone': '../bower_components/backbone/backbone'
+    'backbone': '../bower_components/backbone/backbone',
+
+    // server specific paths
+    layouts: '../../layouts'
   },
   shim: {
     'underscore': {

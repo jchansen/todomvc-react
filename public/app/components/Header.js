@@ -10,7 +10,7 @@ define(
         return (
           <header id="header">
             <h1>todos</h1>
-            <input id="new-todo" placeholder="What needs to be done?" autofocus=""/>
+            <input id="new-todo" placeholder="What needs to be done?"/>
           </header>
         );
       }
