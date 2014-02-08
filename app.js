@@ -4,7 +4,8 @@ define(function (require, exports, module) {
  */
 
 var express = require('express');
-var home = require('./routes/home');
+var router = require('./routes/server_router');
+var routes = require('routes');
 var http = require('http');
 var path = require('path');
 var __dirname = path.dirname(module.uri);
@@ -33,7 +34,7 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', home.index);
+router.registerRoutes(app, routes);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
