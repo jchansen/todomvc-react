@@ -2,6 +2,7 @@ module.exports = function (grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+
     requirejs: {
       compile: {
         options: {
@@ -24,10 +25,23 @@ module.exports = function (grunt) {
           ]
         }
       }
+    },
+
+    react: {
+      files:
+        {
+          expand: true,
+          cwd: 'public/app/components',
+          src: ['**/*.jsx'],
+          dest: 'public/app/components',
+          ext: '.js'
+        }
+
     }
   });
 
   grunt.loadNpmTasks('grunt-contrib-requirejs');
+  grunt.loadNpmTasks('grunt-react');
 
-  grunt.registerTask('default', ['requirejs']);
+  grunt.registerTask('default', ['react']);
 };
