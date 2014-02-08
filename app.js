@@ -21,7 +21,12 @@ app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.methodOverride());
 app.use(app.router);
-app.use(express.static(path.join(__dirname, 'public')));
+
+if (true) {
+  app.use(express.static(path.join(__dirname, 'public')));
+} else {
+  app.use(express.static(path.join(__dirname, 'public_compiled')));
+}
 
 // development only
 if ('development' == app.get('env')) {
