@@ -1,15 +1,23 @@
 define(
   [
-    "react"
+    "react",
+    "jsx!./Header",
+    "jsx!./Main",
+    "jsx!./Footer"
   ],
-  function (React) {
+  function (React, Header, Main, Footer) {
     "use strict"
 
     return React.createClass({
       render: function () {
-        return <h1>Hello World!</h1>;
+        return (
+          <section id="todoapp">
+            <Header/>
+            <Main/>
+            <Footer/>
+          </section>
+        );
       }
     });
-
   }
 );
