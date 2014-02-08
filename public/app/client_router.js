@@ -2,10 +2,9 @@ define(
     [
       'backbone',
       'react',
-      'jquery',
-      './routes'
+      'jquery'
     ],
-    function (Backbone, React, $, routes) {
+    function (Backbone, React, $) {
 
       var showComponent = function(Component){
         React.renderComponent(
@@ -17,6 +16,7 @@ define(
       var Router = Backbone.Router.extend({
         initialize: function(options){
           var index;
+          var routes = options.routes;
           for(index = 0; index < routes.length; ++index){
             var route = routes[index][0];
             var Component = routes[index][1];

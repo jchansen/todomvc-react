@@ -3,12 +3,13 @@ define(
 		'app',
 
     // Routers
-    './client_router'
+    './client_router',
+    './routes'
 	],
-	function (app, Router) {
+	function (app, Router, routes) {
 
 		var run = function () {
-      new Router();
+      new Router({routes: routes});
 			app.start();
 		};
 
