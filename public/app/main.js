@@ -5,7 +5,7 @@
     paths: {
       text: "../javascripts/text",
       jsx: "../javascripts/jsx-requirejs-plugin/jsx",
-      JSXTransformer: "../bower_components/react/JSXTransformer",
+      JSXTransformer: "../javascripts/jsx-requirejs-plugin/JSXTransformer-0.8.0",
       'jquery': '../bower_components/jquery/jquery',
       'react': '../bower_components/react/react',
       'underscore': '../bower_components/underscore/underscore',

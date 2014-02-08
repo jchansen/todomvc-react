@@ -3,7 +3,7 @@ define(
     "react"
   ],
   function (React) {
-    "use strict";
+    "use strict"
 
     return React.createClass({
       render: function () {
