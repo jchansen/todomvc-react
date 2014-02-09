@@ -44,12 +44,21 @@ module.exports = function (grunt) {
         files: ['public/app/components/**/*.jsx'],
         tasks: ['react']
       }
+    },
+
+    mocha: {
+      src: ['test/test.html'],
+      options: {
+        reporter: 'Nyan'
+      }
     }
+
   });
 
   grunt.loadNpmTasks('grunt-contrib-requirejs');
   grunt.loadNpmTasks('grunt-react');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-mocha');
 
   grunt.registerTask('default', ['react']);
 };
