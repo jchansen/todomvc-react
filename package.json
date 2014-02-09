@@ -17,6 +17,6 @@
     "grunt-contrib-requirejs": "*",
     "grunt-react": "~0.6.0",
     "grunt-contrib-watch": "*",
-    "grunt-mocha": "*"
+    "grunt-mocha": "0.4.10"
   }
 }

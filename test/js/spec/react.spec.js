@@ -5,8 +5,6 @@ define(
   function (React) {
     "use strict";
 
-    console.log('running moca');
-
     describe("React", function () {
       var Component;
 
@@ -21,7 +19,6 @@ define(
       });
 
       it("should render component to string", function (done) {
-        console.log('rendering to string');
         React.renderComponentToString(
           Component(),
           function (html) {
