@@ -18,6 +18,6 @@ module.exports = function (grunt) {
     .forEach(function(npmTaskName) { grunt.loadNpmTasks(npmTaskName); });
 
   grunt.registerTask('default', ['development']);
-  grunt.registerTask('development', ['clean','copy','sass','react']);
-  grunt.registerTask('release', ['development','requirejs']);
+  grunt.registerTask('development', ['clean','copy','sass','react','watch']);
+  grunt.registerTask('prod', ['development','requirejs']);
 };
