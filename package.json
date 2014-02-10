@@ -14,9 +14,9 @@
   "devDependencies": {
     "bower": "~1.2.8",
     "grunt": "~0.4.1",
-    "grunt-contrib-requirejs": "*",
+    "grunt-contrib-requirejs": "0.4.0",
     "grunt-react": "~0.6.0",
-    "grunt-contrib-watch": "*",
+    "grunt-contrib-watch": "0.5.3",
     "grunt-mocha": "0.4.10",
     "phantomjs" :"1.9.7-1"
 
