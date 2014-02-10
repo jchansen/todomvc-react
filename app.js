@@ -25,8 +25,10 @@ app.use(app.router);
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, 'public_release')));
-} else {
+} else if (process.env.NODE_ENV === 'development') {
   app.use(express.static(path.join(__dirname, 'public_development')));
+} else {
+  app.use(express.static(path.join(__dirname, 'public')));
 }
 
 // development only
