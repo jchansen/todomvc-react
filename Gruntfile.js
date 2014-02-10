@@ -12,13 +12,14 @@ module.exports = function (grunt) {
   });
 
   // Load any NPM tasks in package.json/devDependencies starting with grunt-
-  Object.keys(grunt.file.readJSON('package.json').devDependencies)
+  Object.keys(grunt.file.readJSON('package.json').dependencies)
     .filter(function(npmTaskName) { return npmTaskName.indexOf('grunt-') === 0; })
     .filter(function(npmTaskName) { return npmTaskName != 'grunt-cli'; })
     .forEach(function(npmTaskName) { grunt.loadNpmTasks(npmTaskName); });
 
   grunt.registerTask('default', ['development']);
-  grunt.registerTask('development', ['clean','copy','sass','react','watch']);
-  grunt.registerTask('prod', ['development','requirejs']);
-  grunt.registerTask('heroku', ['development']);
+  grunt.registerTask('build', ['clean','copy','sass','react']);
+  grunt.registerTask('development', ['build','watch']);
+  grunt.registerTask('prod', ['build','requirejs']);
+  grunt.registerTask('heroku', ['prod']);
 };
