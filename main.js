@@ -7,8 +7,6 @@ requirejs.config({
   baseUrl: 'public/app',
   paths: {
     text: "../javascripts/text",
-    jsx: "../javascripts/jsx-requirejs-plugin/jsx",
-    JSXTransformer: "../javascripts/jsx-requirejs-plugin/JSXTransformer-0.8.0",
     'jquery': '../bower_components/jquery/jquery',
     'react': '../bower_components/react/react',
     'underscore': '../bower_components/underscore/underscore',

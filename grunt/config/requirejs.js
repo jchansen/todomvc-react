@@ -8,16 +8,13 @@ module.exports = {
       baseUrl: 'app',
       dir: "public_compiled",
       removeCombined: true,
-      //optimize: 'none',
-
-      onBuildWrite: function (moduleName, path, singleContents) {
-        return singleContents.replace(/jsx!/g, '');
-      },
+      optimize: 'none',
+      //optimize: 'uglify2',
+      useStrict: true, // required to be able to minify react/JSXTransformer
 
       modules: [
         {
-          name: "main",
-          exclude: ["jsx"]
+          name: "main"
         }
       ]
     }

@@ -1,1 +1,0 @@
-https://github.com/philix/jsx-requirejs-plugin
