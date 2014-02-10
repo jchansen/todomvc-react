@@ -23,10 +23,10 @@ app.use(express.urlencoded());
 app.use(express.methodOverride());
 app.use(app.router);
 
-if (true) {
-  app.use(express.static(path.join(__dirname, 'public')));
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, 'public_release')));
 } else {
-  app.use(express.static(path.join(__dirname, 'public_compiled')));
+  app.use(express.static(path.join(__dirname, 'public_development')));
 }
 
 // development only

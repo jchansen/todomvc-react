@@ -3,9 +3,9 @@
 module.exports = {
   files: {
     expand: true,
-    cwd: 'public/app/components',
+    cwd: 'public/app',
     src: ['**/*.jsx'],
-    dest: 'public/app/components',
+    dest: 'public_development/app',
     ext: '.js'
   }
 };

@@ -15,11 +15,11 @@ define(
     return React.createClass({
       render: function () {
         return (
-          React.DOM.section( {id:"todoapp"}, 
-            Header(null),
-            Main(null),
-            Footer(null)
-          )
+          <section id="todoapp">
+            <Header/>
+            <Main/>
+            <Footer/>
+          </section>
         );
       }
     });

@@ -4,7 +4,7 @@ var requirejs = require('requirejs');
 // -----------------------
 requirejs.config({
   nodeRequire: require,
-  baseUrl: 'public/app',
+  baseUrl: 'public_development/app',
   paths: {
     text: "../javascripts/text",
     'jquery': '../bower_components/jquery/jquery',
