@@ -20,4 +20,5 @@ module.exports = function (grunt) {
   grunt.registerTask('default', ['development']);
   grunt.registerTask('development', ['clean','copy','sass','react','watch']);
   grunt.registerTask('prod', ['development','requirejs']);
+  grunt.registerTask('heroku', ['development']);
 };
